@@ -20,13 +20,12 @@ restService.get("/", function (req, res) {
 
 restService.post("/echo", function(req, res) {
 
-    console.log('Incoming request', req);
+    console.log('Incoming request body:', req.body);
 
     var speech =
-        req.body.result &&
-        req.body.result.parameters &&
-        req.body.result.parameters.echoText
-            ? req.body.result.parameters.echoText
+        req.body.queryResult &&
+        req.body.queryResult.echoText
+            ? req.body.queryResult.echoText
             : "Seems like some problem. Speak again.";
 
     console.log('speech:', speech);
