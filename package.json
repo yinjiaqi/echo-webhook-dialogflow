@@ -1,0 +1,14 @@
+{
+  "name": "webhook-echo-dialogflow",
+  "version": "1.0.0",
+  "description": "Webhook echo sample - based on https://github.com/SunilSyal/Webhook-and-API.AI-Echo-Sample/blob/master/package.json",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Florian Perrotti",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3"
+  }
+}
