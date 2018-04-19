@@ -15,7 +15,7 @@ restService.use(bodyParser.json());
 
 
 restService.get("/", function (req, res) {
-    return res.text('Hello from Echo sample!');
+    return res.send('Hello from Echo sample!');
 });
 
 restService.post("/echo", function(req, res) {
