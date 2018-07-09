@@ -59,7 +59,18 @@ restService.post("/echo", function(req, res) {
                                         }
                                     }
                                     ],
-                             
+                             "imageDisplayOptions": "CROPPED"
+}
+}
+],
+"suggestions": []
+}
+},
+"possibleIntents": [
+{
+"intent": "actions.intent.text"
+}
+]
                             
                     ]
                 }
