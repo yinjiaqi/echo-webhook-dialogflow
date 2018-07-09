@@ -42,11 +42,30 @@ restService.post("/echo", function(req, res) {
                             simpleResponse: {
                                 textToSpeech: speech
                             }
-                        }
+                        },
+                        { 
+                            "basicCard":{
+                                "title":speech,
+                                "formattedText":"Your Query Input"+speech,
+                                "image":{
+                                    "url":"https://example.google.com/42.png",
+                                    "accessibilituText":"Image alternate text"
+                                },
+                                "buttons":[
+                                    {
+                                        "title":"read more",
+                                        "openUrlAction":{
+                                            "url":"https://wwww.baidu.com"
+                                        }
+                                    }
+                                    ],
+                             
+                            
                     ]
                 }
             }
         },
+                        
         source: "https://echo-webhook-dialogflow.herokuapp.com"
     });
 });
