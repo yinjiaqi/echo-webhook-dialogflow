@@ -40,22 +40,22 @@ restService.post("/echo", function(req, res) {
                     items:[
                         {
                             "simpleResponse": {
-                                "textToSpeech": "Math and prime numbers it is!"
+                                "textToSpeech": speech
                             }
                         },
                         {
                             "basicCard": {
-                                "title": "Math & prime numbers",
-                                "formattedText": "42 is an even composite number. It\n    is composed of three distinct prime numbers multiplied together. It\n    has a total of eight divisors. 42 is an abundant number, because the\n    sum of its proper divisors 54 is greater than itself. To count from\n    1 to 42 would take you about twenty-one…",
+                                "title": speech,
+                                "formattedText": "Your Query Input"+speech,
                                 "image": {
-                                    "url": "https://example.google.com/42.png",
+                                    "url": "https://www.google.com.tw/search?biw=1356&bih=599&tbm=isch&sa=1&ei=HuJCW_COIcib8wWou4bIDg&q=sql&oq=sql&gs_l=img.3..0l10.1696.2152.0.2369.4.4.0.0.0.0.210.210.2-1.1.0....0...1c.1.64.img..3.1.210.0...0.sfGMguLMH4Q#imgrc=3vXINHvNrjHCPM:",
                                     "accessibilityText": "Image alternate text"
                                 },
                                 "buttons": [
                                     {
                                         "title": "Read more",
                                         "openUrlAction": {
-                                            "url": "https://example.google.com/mathandprimes"
+                                            "url": "https://baidu.com"
                                         }
                                     }
                                 ],
