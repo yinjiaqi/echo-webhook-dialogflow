@@ -42,18 +42,7 @@ restService.post("/echo", function(req, res) {
                             simpleResponse: {
                                 textToSpeech: speech
                             }
-                        },
-                        {
-                            "basicCard":{
-                                "title":speech,
-                                "formattedText":"Your Query Input"+speech,
-                                "image":{
-                                    "url":"https://example.google.com/42.png",
-                                    "accessibilityText":"Image alternate text"
-                                },
-                                "buttons":[
-                                    {
-                                        "Title":"Read more",
+                        }
                     ]
                 }
             }
